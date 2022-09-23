@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Nova Lead" icon-name="action:new_lead">
+        <div class="slds-m-around_medium">
+        <lightning-record-edit-form object-api-name="Lead" onsuccess={handleSucess}> 
+        <p><lightning-input-field field-name="FirstName"></lightning-input-field></p>
+        <p><lightning-input-field field-name="LastName"></lightning-input-field></p>
+        <p><lightning-input-field field-name="Company"></lightning-input-field></p>
+        <p><lightning-input-field field-name="AnnualRevenue"></lightning-input-field></p>
+        <p><lightning-input-field field-name="Status"></lightning-input-field></p>
+        <p><lightning-input-field field-name="Rating"></lightning-input-field></p>
+        <p><lightning-input-field field-name="MobilePhone"></lightning-input-field></p>
+        <p><lightning-input-field field-name="Phone"></lightning-input-field></p>
+
+        <p>
+            <lightning-button label="Limpar" onclick={limpar}></lightning-button>
+            <lightning-button label="Criar Lead" type="submit" variant="brand" ></lightning-button>
+        </p>
+        </lightning-record-edit-form>
+
+        </div>
+    </lightning-card>
+</template>
